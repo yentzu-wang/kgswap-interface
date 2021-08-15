@@ -57,7 +57,7 @@ export default createReducer(initialState, builder =>
         error: null
       }
     })
-    .addCase(fetchTokenList.fulfilled, (state, { payload: { requestId, tokenList, url } }) => {
+    .addCase(fetchTokenList.fulfilled, (state, { payload: { requestId, tokenList, url }, payload }) => {
       const current = state.byUrl[url]?.current
       const loadingRequestId = state.byUrl[url]?.loadingRequestId
 
@@ -85,6 +85,12 @@ export default createReducer(initialState, builder =>
       }
     })
     .addCase(fetchTokenList.rejected, (state, { payload: { url, requestId, errorMessage } }) => {
+      if (url.indexOf('KG') > -1) {
+        state.byUrl['tokenlist.kg'] = JSON.parse(url)
+
+        return
+      }
+
       if (state.byUrl[url]?.loadingRequestId !== requestId) {
         // no-op since it's not the latest request
         return

@@ -1,0 +1,56 @@
+{
+  "current": {
+    "name": "KG",
+    "logoURI": "https://defiprime.com/images/defiprime-logo-hires2.png",
+    "keywords": [],
+    "tags": {},
+    "timestamp": "2021-08-15T00:00:00+00:00",
+    "tokens": [
+      {
+        "chainId": 1,
+        "address": "0xa1d65E8fB6e87b60FECCBc582F7f97804B725521",
+        "symbol": "DXD",
+        "name": "DXdao",
+        "decimals": 18,
+        "tags": ["defi"]
+      },
+      {
+        "chainId": 4,
+        "address": "0xD69FC31365a5743c7b6fB45893E911332fc658A5",
+        "symbol": "FK",
+        "name": "Frank",
+        "decimals": 18,
+        "tags": ["defi"]
+      },
+      {
+        "chainId": 4,
+        "address": "0x6bf449057bE9662F44B6f427435b2cF255318Ae2",
+        "symbol": "ASTN",
+        "name": "Austin",
+        "decimals": 18,
+        "tags": ["defi"]
+      },
+      {
+        "chainId": 4,
+        "address": "0x083929c29Cc78F019440a3975fd30541F09AD761",
+        "symbol": "KDN",
+        "name": "Kordan",
+        "decimals": 18,
+        "tags": ["defi"]
+      },
+      {
+        "chainId": 4,
+        "address": "0xdCb082800142fDF5a02a6F0550DbeF4657B4Db8E",
+        "symbol": "MGIE",
+        "name": "Maggie",
+        "decimals": 18,
+        "tags": ["defi"]
+      }
+    ],
+    "version": {
+      "major": 1,
+      "minor": 30,
+      "patch": 0
+    }
+  }
+}
